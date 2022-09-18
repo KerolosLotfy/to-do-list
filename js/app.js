@@ -22,7 +22,7 @@ control_colors[2].children[1].value = active;
 
 // add class name (active) to this page to make tranlate Effect  
 window.onload = () => {
-    window.location.pathname === '/To-Do-List.html'
+    window.location.pathname === 'to-do-list/To-Do-List.html'
         ? document.querySelector(".to-do").classList.add("active")
         : '';
 };
