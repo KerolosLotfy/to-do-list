@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Home</title>
+    <!-- add Favicon  -->
+    <link rel=" icon" href="../image/icons8-shortlist-96.png" type="image/png">
+    <!-- Main style file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover">
+            <p class="start">start</p>
+            <h1>To do list</h1>
+            <p>Simple to do list app design</p>
+        </div>
+    </div>
+
+    <script>
+        const start = document.querySelector(".start");
+        start.addEventListener("click", () => {
+            window.location.pathname = '/to-do-list/To-Do-List.html';
+        })
+    </script>
+    
+</body>
+
+</html>

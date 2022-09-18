@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    
+    <!-- add Favicon  -->
+    <link rel=" icon" href="../image/icons8-shortlist-96.png" type="image/png">
+    <!-- Main style file -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="to-do">
+            <!-- header k -->
+            <div class="header">
+                <!-- form to add new tas -->
+                <form action="">
+                    <input type="text" name="Task" id="newTask" placeholder="Add New Task" spellcheck="true"
+                        aria-label="addTask">
+                    <i class="fa-solid fa-chevron-right" id="enter"></i>
+                </form>
+                <!-- meun -->
+                <menu>
+                    <!-- meun icon -->
+                    <i class="fa-solid fa-bars-staggered menu"></i>
+                    
+                    <!-- control menu -->
+                    <div class="control_menu">
+                        <form>
+                            <label for="bgColor">Bacground Color</label>
+                            <input type="color" id="bgColor">
+                        </form>
+                        <form>
+                            <label for="textColor">Text Color</label>
+                            <input type="color" id="textColor">
+                        </form>
+                        <form>
+                            <label for="iconColor">Icon Color</label>
+                            <input type="color" id="iconColor">
+                        </form>
+                        <button class="reset btn">Reset</button>
+                    </div>
+                </menu>
+            </div>
+
+            <!--  tasks list-->
+            <ul class="tasks"></ul>
+
+            <!--  complated tasks list-->
+            <div class="complated">
+                <h1>complated <i class="fa-solid fa-broom" id="clear" title="Delete All"></i></h1>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- End App -->
+    <footer> <i class="fa-solid fa-face-smile-wink"></i> Made by <span class="myName">Kerolos</span></footer>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
