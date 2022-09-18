@@ -223,7 +223,7 @@ menuBtn.addEventListener(("click"), () => {
             applyColorsInPage(colors);
 
         })
-        
+
     })
 });
 
