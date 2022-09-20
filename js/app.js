@@ -43,12 +43,14 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     addNewTask(newTask.value);
     newTask.value = '';
+    newTask.blur();
 });
 
 // click arrow to add New Task
 enterBtn.addEventListener('click', () => {
     addNewTask(newTask.value);
     newTask.value = '';
+    newTask.blur();
 })
 
 // Add New Task to page
@@ -211,6 +213,7 @@ menuBtn.addEventListener(("click"), () => {
     document.querySelector('menu').classList.toggle("active");
     control_colors.forEach((form) => {
         form.children[1].addEventListener('blur', () => {
+            document.querySelector('menu').classList.remove("active");
             let colors = {
                 bgColor: control_colors[0].children[1].value,
                 textColor: control_colors[1].children[1].value,

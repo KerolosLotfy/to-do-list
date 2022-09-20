@@ -10,7 +10,7 @@
     --bg-color: #38404B;
     --text-color: #94ADCF;
     --active-color: #00ffff;
-    
+
 }
 
 /* Small Devices */
@@ -69,6 +69,7 @@ body {
     min-height: 88vh;
     position: relative;
 }
+
 /************************* cover page *************************/
 .cover {
     width: 610px;
@@ -103,7 +104,7 @@ body {
     margin-top: 77px;
     line-height: 24.2px;
     background-color: var(--bg-color);
-    
+
 }
 
 .cover h1 {
@@ -139,7 +140,7 @@ body {
     padding: 10px;
     transition: transform .5s;
     transform: translateX(-100%);
-    
+
 }
 
 .to-do.active {
@@ -165,9 +166,10 @@ body {
     }
 }
 
- .header menu {
+.header menu {
     position: relative;
- }
+}
+
 .header menu .menu {
     font-size: 30px;
     margin-left: 20px;
@@ -179,7 +181,7 @@ body {
 }
 
 /* Control Menu */
-.header menu > .control_menu {
+.header menu>.control_menu {
     position: absolute;
     padding: 20px;
     right: 0;
@@ -197,7 +199,7 @@ body {
     font-weight: 100;
     box-shadow: 0 0 5px var(--text-color);
     border-radius: 15px;
-    transition:  transform 0.3s , opacity 0.3s ;
+    transition: transform 0.3s, opacity 0.3s;
     opacity: 0;
     -webkit-transform: translateY(30px);
     -o-transform: translateY(30px);
@@ -206,7 +208,7 @@ body {
     z-index: -1;
 }
 
-.header menu.active > .control_menu {
+.header menu.active>.control_menu {
     opacity: 1;
     -webkit-transform: translateY(0px);
     -o-transform: translateY(0px);
@@ -235,7 +237,7 @@ body {
 }
 
 
-.to-do .header > form {
+.to-do .header>form {
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
@@ -249,7 +251,7 @@ body {
     box-shadow: 1px 1px 2px rgba(66, 75, 88, 0.3), -1px -1px 2px rgba(46, 53, 62, 0.5), inset -3px 3px 6px rgba(46, 53, 62, 0.2), inset 3px -3px 6px rgba(46, 53, 62, 0.2), inset -3px -3px 6px rgba(66, 75, 88, 0.9), inset 3px 3px 8px rgba(46, 53, 62, 0.9);
 }
 
-.to-do .header > form>input {
+.to-do .header>form>input {
     background-color: transparent;
     color: var(--text-color);
     height: 100%;
@@ -350,7 +352,7 @@ body {
     font-size: 40px;
 }
 
-.complated h1 #clear, 
+.complated h1 #clear,
 .complated .date {
     display: inline-block;
     font-size: 16px;
@@ -381,9 +383,8 @@ footer {
     font-weight: 800;
 }
 
-footer > i,
-footer .myName{
+footer>i,
+footer .myName {
     cursor: auto;
     color: var(--active-color);
 }
-
